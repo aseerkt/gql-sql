@@ -1,0 +1,4 @@
+{
+  "$schema": "https://json.schemastore.org/nodemon.json",
+  "exec": "babel-node src/index.js"
+}

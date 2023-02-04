@@ -1,0 +1,37 @@
+{
+  "name": "gql-sql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.3.2",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "pluralize": "^8.0.0",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@faker-js/faker": "^7.6.0",
+    "eslint": ">=8.27.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-xo": "^0.43.1",
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.6.0"
+  }
+}
