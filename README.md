@@ -1,7 +1,5 @@
 # GQL-SQL
 
---
-
 > GraphQL with Sequelize
 
 ## Features
