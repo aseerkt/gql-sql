@@ -4,9 +4,7 @@ import { createQueryResolver } from '../../../utils/gqlUtils';
 import { GraphQLUserType } from './user.type';
 
 export const UserQuery = {
-  query: {
-    type: GraphQLUserType,
-  },
+  type: GraphQLUserType,
   args: {
     id: { type: new GraphQLNonNull(GraphQLInt) },
   },

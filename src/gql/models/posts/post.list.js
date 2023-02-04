@@ -8,9 +8,7 @@ export const PostConnection = createQueryConnection(db.postModel, {
 });
 
 export const PostListQuery = {
-  list: {
-    type: PostConnection.type,
-  },
+  type: PostConnection.type,
   args: PostConnection.args,
   resolve: PostConnection.resolve,
 };

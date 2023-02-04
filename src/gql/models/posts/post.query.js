@@ -4,9 +4,7 @@ import { createQueryResolver } from '../../../utils/gqlUtils';
 import { GraphQLPostType } from './post.type';
 
 export const PostQuery = {
-  query: {
-    type: GraphQLPostType,
-  },
+  type: GraphQLPostType,
   args: {
     id: { type: new GraphQLNonNull(GraphQLInt) },
   },

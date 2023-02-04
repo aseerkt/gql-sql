@@ -8,9 +8,7 @@ export const UserConnection = createQueryConnection(db.userModel, {
 });
 
 export const UserListQuery = {
-  list: {
-    type: UserConnection.type,
-  },
+  type: UserConnection.type,
   args: UserConnection.args,
   resolve: UserConnection.resolve,
 };

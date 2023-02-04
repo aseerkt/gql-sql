@@ -31,12 +31,8 @@ const getSelectionsAttributes = (info) => {
  * @param {import('sequelize').ModelCtor<import('sequelize').Model} model
  * @returns
  */
-export const createQueryResolver = (model) => {
-  console.log('MODEL_START');
-  console.log(model);
-  console.log(JSON.stringify(model, null, 2));
-  console.log('MODEL_END');
-  return async (source, args, context, info) => {
+export const createQueryResolver =
+  (model) => async (source, args, context, info) => {
     const findOptions = {
       where: { id: args.id },
       raw: true,
@@ -47,7 +43,6 @@ export const createQueryResolver = (model) => {
     const result = await model.findOne(findOptions);
     return result;
   };
-};
 
 /**
  * Function to create connection for model
